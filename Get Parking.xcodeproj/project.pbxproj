@@ -9,27 +9,31 @@
 /* Begin PBXBuildFile section */
 		0F81FE8D2141AE910082C53B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F81FE8C2141AE910082C53B /* AppDelegate.swift */; };
 		0F81FE8F2141AE910082C53B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F81FE8E2141AE910082C53B /* ViewController.swift */; };
-		0F81FE922141AE910082C53B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F81FE902141AE910082C53B /* Main.storyboard */; };
 		0F81FE942141AE910082C53B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F81FE932141AE910082C53B /* Assets.xcassets */; };
 		0F81FE972141AE910082C53B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F81FE952141AE910082C53B /* LaunchScreen.storyboard */; };
-		0F81FE9F2141AF580082C53B /* GoogleService-Info 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F81FE9E2141AF580082C53B /* GoogleService-Info 2.plist */; };
 		0F86F9D12141B53100590823 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F86F9D02141B53000590823 /* GoogleService-Info.plist */; };
+		0F86F9D32141BAFD00590823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F86F9D22141BAFD00590823 /* Main.storyboard */; };
+		0FB602F72142B5D600DF590F /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB602F62142B5D600DF590F /* FirebaseReference.swift */; };
 		776A575BFFA8559135F36894 /* Pods_Get_Parking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC142B4978B7FC390B448E8 /* Pods_Get_Parking.framework */; };
+		C5A382B921438E7B00ABA851 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A382B821438E7B00ABA851 /* User.swift */; };
+		C5A382BB21438EF500ABA851 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A382BA21438EF500ABA851 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F81FE892141AE910082C53B /* Get Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Parking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F81FE8C2141AE910082C53B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F81FE8E2141AE910082C53B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0F81FE912141AE910082C53B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F81FE932141AE910082C53B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F81FE962141AE910082C53B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F81FE982141AE910082C53B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F81FE9E2141AF580082C53B /* GoogleService-Info 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info 2.plist"; sourceTree = "<group>"; };
 		0F86F9D02141B53000590823 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F86F9D22141BAFD00590823 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0FB602F62142B5D600DF590F /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
 		69C93ADB576481F6584B2429 /* Pods-Get Parking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get Parking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Get Parking/Pods-Get Parking.release.xcconfig"; sourceTree = "<group>"; };
 		9DC142B4978B7FC390B448E8 /* Pods_Get_Parking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Get_Parking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52476E6F6748EC65ADC3DEB /* Pods-Get Parking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get Parking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Get Parking/Pods-Get Parking.debug.xcconfig"; sourceTree = "<group>"; };
+		C5A382B821438E7B00ABA851 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C5A382BA21438EF500ABA851 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,16 +69,26 @@
 		0F81FE8B2141AE910082C53B /* Get Parking */ = {
 			isa = PBXGroup;
 			children = (
+				0FB602F52142B53B00DF590F /* Model */,
 				0F81FE8C2141AE910082C53B /* AppDelegate.swift */,
 				0F81FE8E2141AE910082C53B /* ViewController.swift */,
-				0F81FE902141AE910082C53B /* Main.storyboard */,
+				0F86F9D22141BAFD00590823 /* Main.storyboard */,
 				0F81FE932141AE910082C53B /* Assets.xcassets */,
 				0F81FE952141AE910082C53B /* LaunchScreen.storyboard */,
 				0F81FE982141AE910082C53B /* Info.plist */,
-				0F81FE9E2141AF580082C53B /* GoogleService-Info 2.plist */,
 				0F86F9D02141B53000590823 /* GoogleService-Info.plist */,
 			);
 			path = "Get Parking";
+			sourceTree = "<group>";
+		};
+		0FB602F52142B53B00DF590F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FB602F62142B5D600DF590F /* FirebaseReference.swift */,
+				C5A382B821438E7B00ABA851 /* User.swift */,
+				C5A382BA21438EF500ABA851 /* Image.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		495097AFDC8CFEBB2F86332C /* Frameworks */ = {
@@ -155,10 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F81FE972141AE910082C53B /* LaunchScreen.storyboard in Resources */,
-				0F81FE9F2141AF580082C53B /* GoogleService-Info 2.plist in Resources */,
 				0F86F9D12141B53100590823 /* GoogleService-Info.plist in Resources */,
 				0F81FE942141AE910082C53B /* Assets.xcassets in Resources */,
-				0F81FE922141AE910082C53B /* Main.storyboard in Resources */,
+				0F86F9D32141BAFD00590823 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A382B921438E7B00ABA851 /* User.swift in Sources */,
 				0F81FE8F2141AE910082C53B /* ViewController.swift in Sources */,
+				0FB602F72142B5D600DF590F /* FirebaseReference.swift in Sources */,
+				C5A382BB21438EF500ABA851 /* Image.swift in Sources */,
 				0F81FE8D2141AE910082C53B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,14 +242,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0F81FE902141AE910082C53B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F81FE912141AE910082C53B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0F81FE952141AE910082C53B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
