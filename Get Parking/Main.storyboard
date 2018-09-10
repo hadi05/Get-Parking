@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Get_Parking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Get_Parking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sp" translatesAutoresizingMaskIntoConstraints="NO" id="aq1-Ky-1vG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fs-if-wAH">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fs-if-wAH" customClass="we">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rNc-lO-Vhp">
@@ -96,7 +96,7 @@
         <!--Create New Account-->
         <scene sceneID="qRv-Jq-0Zi">
             <objects>
-                <tableViewController id="slV-O4-lEO" sceneMemberID="viewController">
+                <tableViewController id="slV-O4-lEO" customClass="SignUpTableViewController" customModule="Get_Parking" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Xdd-X4-B04">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,6 +119,9 @@
                                         <constraint firstAttribute="height" constant="30" id="wQ5-wz-r77"/>
                                     </constraints>
                                     <state key="normal" title="Change Profile Picture"/>
+                                    <connections>
+                                        <action selector="changeProfilePicture:" destination="slV-O4-lEO" eventType="touchUpInside" id="7FF-xV-hhg"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -214,7 +217,7 @@
                                                     <rect key="frame" x="43" y="7" width="316" height="46"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -242,7 +245,7 @@
                                                         <constraint firstAttribute="width" constant="20" id="wsD-GP-gql"/>
                                                     </constraints>
                                                 </imageView>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aW-u0-iSd">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Car Company" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aW-u0-iSd">
                                                     <rect key="frame" x="43" y="7" width="316" height="46"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -274,7 +277,7 @@
                                                         <constraint firstAttribute="width" constant="20" id="yBm-Oa-bO3"/>
                                                     </constraints>
                                                 </imageView>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EhB-3p-aOx">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Car Model" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EhB-3p-aOx">
                                                     <rect key="frame" x="43" y="7" width="316" height="46"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -306,7 +309,7 @@
                                                         <constraint firstAttribute="width" constant="19" id="ipP-LW-w80"/>
                                                     </constraints>
                                                 </imageView>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r2F-tX-Rwy">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Car Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r2F-tX-Rwy">
                                                     <rect key="frame" x="43" y="7" width="316" height="46"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -377,6 +380,9 @@
                                                     <state key="normal" title="Create A New Account">
                                                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="createNewAccount:" destination="slV-O4-lEO" eventType="touchUpInside" id="bRJ-nh-yat"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -396,17 +402,31 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Create New Account" id="PUb-Qc-kyD">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="Ran-Tm-GiZ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="Ran-Tm-GiZ">
+                            <connections>
+                                <action selector="backToWelcome:" destination="slV-O4-lEO" id="eci-JG-LvA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="carCompany" destination="r2F-tX-Rwy" id="eyF-B0-oZU"/>
+                        <outlet property="carModel" destination="6aW-u0-iSd" id="LId-Rc-UjW"/>
+                        <outlet property="carNumber" destination="EhB-3p-aOx" id="l5X-1V-b5F"/>
+                        <outlet property="contactNumber" destination="jAI-NW-EI5" id="ZKw-g8-W7F"/>
+                        <outlet property="emailTextField" destination="hsH-7d-5dB" id="Chl-Vh-flP"/>
+                        <outlet property="fullName" destination="dyE-Zo-yfW" id="0RR-U8-9im"/>
+                        <outlet property="passwordTextField" destination="BgM-pH-Ab3" id="Uu5-0e-C2G"/>
+                        <outlet property="profileImageView" destination="Xy2-Za-bRm" id="Tf5-qC-5qk"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pth-gG-zUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1410" y="110"/>
+            <point key="canvasLocation" x="1457" y="117"/>
         </scene>
         <!--Login to Park-->
         <scene sceneID="dTQ-Hz-snm">
             <objects>
-                <tableViewController id="Ny5-ed-btK" sceneMemberID="viewController">
+                <tableViewController id="Ny5-ed-btK" customClass="SignIn" customModule="Get_Parking" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="hXm-31-lZr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -495,6 +515,9 @@
                                                     <state key="normal" title="Login">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="signInPressed:" destination="Ny5-ed-btK" eventType="touchUpInside" id="jkN-J9-Iyg"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -514,36 +537,56 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Login to Park" id="9bk-XL-LUc">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="1lb-SO-ZFA"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="1lb-SO-ZFA">
+                            <connections>
+                                <action selector="backToWelcome:" destination="Ny5-ed-btK" id="d0g-H2-kbH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="Sn4-BD-S9p" id="tJF-e5-c8D"/>
+                        <outlet property="passwordTextField" destination="0JM-f0-oXM" id="bV1-XQ-q6J"/>
+                        <segue destination="mVq-8l-Kj7" kind="presentation" identifier="parkingStatus" id="WAO-Dj-VAx"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URi-Ez-RKD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1722" y="809"/>
         </scene>
-        <!--View Controller-->
+        <!--Parking Status View Controller-->
         <scene sceneID="hyB-2e-eaR">
             <objects>
-                <viewController id="mVq-8l-Kj7" sceneMemberID="viewController">
+                <viewController id="mVq-8l-Kj7" customClass="ParkingStatusViewController" customModule="Get_Parking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xoZ-Fy-oz9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parking Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeT-dk-ekc">
-                                <rect key="frame" x="132" y="31" width="111" height="21"/>
+                                <rect key="frame" x="132" y="83" width="111" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hn-Rt-jDC">
+                                <rect key="frame" x="141" y="286" width="95" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log out"/>
+                                <connections>
+                                    <action selector="signOut:" destination="mVq-8l-Kj7" eventType="touchUpInside" id="ezc-09-QMO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tVr-1d-9Mb"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="welcome" id="tJp-jL-i1x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLs-o3-0SZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2623" y="828"/>
+            <point key="canvasLocation" x="2621.5999999999999" y="827.13643178410803"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hEp-Hu-NPj">

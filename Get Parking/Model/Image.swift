@@ -30,10 +30,8 @@ class Image
             // 2. save that data to the reference
             ref.putData(imageData, metadata: nil, completion: { (metaData, error) in
                 completion(error)
-
+                
             })
-           
-            
         }
     }
 }

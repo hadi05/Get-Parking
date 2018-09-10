@@ -19,10 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-        let user = User(uid: "3", name: "Ali", profileImage: UIImage(named: "logo")!, email: "hadi050892@gmail.com", mobile: "03314154757")
-        user.save { (error) in
-            print(error)
-        }
+//        let user = User(uid: "3", name: "Ali", profileImage: UIImage(named: "logo")!, email: "hadi050892@gmail.com", mobile: "03314154757")
+//        user.save { (error) in
+//            print(error)
+//        }
         
        
         

@@ -8,21 +8,21 @@
 import Foundation
 import Firebase
 
-enum DbReference{
-
+enum DbReference {
+    
     case root
     case users(uid: String)
     
     // MARK: - Public
     
     func reference() -> DatabaseReference
-{
-    switch self {
-    case .root:
-    return rootRef
-    default:
-    return rootRef.child(path)
-    }
+    {
+        switch self {
+        case .root:
+            return rootRef
+        default:
+            return rootRef.child(path)
+        }
     }
     
     private var rootRef: DatabaseReference {
@@ -30,39 +30,39 @@ enum DbReference{
     }
     
     private var path: String {
-    switch self {
-    case .root:
-    return ""
-    case .users(let uid):
-    return "users/\(uid)"
+        switch self {
+        case .root:
+            return ""
+        case .users(let uid):
+            return "users/\(uid)"
+        }
     }
-    }
+}
+
+enum StoreReference
+{
+    case root
+    case profileImages
+    
+    func reference() -> StorageReference {
+        switch self {
+        case .root:
+            return rootRef
+        default:
+            return rootRef.child(path)
+        }
     }
     
-    enum StoreReference
-    {
-        case root
-        case profileImages
-        
-        func reference() -> StorageReference {
-            switch self {
-            case .root:
-                return rootRef
-            default:
-                return rootRef.child(path)
-            }
+    private var rootRef: StorageReference {
+        return Storage.storage().reference()
+    }
+    
+    private var path: String {
+        switch self {
+        case .root:
+            return ""
+        case .profileImages:
+            return "profileImages"
         }
-        
-        private var rootRef: StorageReference {
-            return Storage.storage().reference()
-        }
-        
-        private var path: String {
-            switch self {
-            case .root:
-                return ""
-            case .profileImages:
-                return "profileImages"
-            }
-        }
+    }
 }

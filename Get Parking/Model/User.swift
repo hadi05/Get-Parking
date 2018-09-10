@@ -14,14 +14,21 @@ class User
     var mobile: String
     var profileImage: UIImage!
     var email: String
+    var carModel : String
+    var carNumber : String
+    var carCompany : String
     
-    init(uid: String, name: String, profileImage: UIImage, email: String, mobile: String)
+    init(uid: String, name: String, profileImage: UIImage, email: String, mobile: String, carModel: String, carNumber: String, carCompany: String)
     {
         self.uid = uid
         self.name = name
         self.profileImage = profileImage
         self.email = email
         self.mobile = mobile
+        self.carModel = carModel
+        self.carCompany = carCompany
+        self.carNumber = carNumber
+        
     }
     
    
@@ -52,7 +59,10 @@ class User
             "uid" : uid,
             "name" : name,
             "mobile" : mobile,
-            "email" : email
+            "email" : email,
+            "carNumber" : carNumber,
+            "carCompany" : carCompany,
+            "carModel" : carModel
         ]
     }
 }
