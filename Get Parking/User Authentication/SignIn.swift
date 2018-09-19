@@ -18,32 +18,54 @@ class SignIn: UITableViewController {
     
     
     @IBAction func signInPressed(_ sender: Any) {
-        if (emailTextField.text?.isEmpty)!{
-            showAlert(titleStr: "Error", messageStr: "Enter email")
+        SVProgressHUD.show()
+        if let email = emailTextField.text, let pass = passwordTextField.text {
             
-        }
-        else if (passwordTextField.text?.isEmpty)!{
-            showAlert(titleStr: "Error", messageStr: "Enter password")
-            //
-        }
-            
-        else {
-            SVProgressHUD.show()
-            Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!)
-            {
-                (user, error) in
-                if error != nil{
-                    print(error!)
-                }
-                else{
+            Auth.auth().signIn(withEmail: email, password: pass, completion: { (user, error) in
+                
+                //print(“\(car) has a licence: \(license)”)
+                
+                if error == nil {
                     print("Login successful")
                     SVProgressHUD.dismiss()
-                    self.performSegue(withIdentifier: "parkingStatus", sender: self)
+                    self.performSegue(withIdentifier: "parkingStatus", sender: nil)                }
+                else {
+                    SVProgressHUD.dismiss()
+               //     self.showAlert(titleStr: "Sign in Failed", messageStr: "Incorrect Email/Passowrd")
+                    self.showAlert(titleStr: "login failed", messageStr: error!.localizedDescription)
                 }
                 
-            }
+            })
+            
         }
     }
+    
+//        if (emailTextField.text?.isEmpty)!{
+//            showAlert(titleStr: "Error", messageStr: "Enter email")
+//
+//        }
+//        else if (passwordTextField.text?.isEmpty)!{
+//            showAlert(titleStr: "Error", messageStr: "Enter password")
+//            //
+//        }
+//
+//        else {
+//            SVProgressHUD.show()
+//            Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!)
+//            {
+//                (user, error) in
+//                if error != nil{
+//                    print(error!)
+//                }
+//                else{
+//                    print("Login successful")
+//                    SVProgressHUD.dismiss()
+//                    self.performSegue(withIdentifier: "parkingStatus", sender: self)
+//                }
+//
+//            }
+//        }
+
     
     @IBAction func backToWelcome(_ sender: Any) {
         self.dismiss(animated: false) {

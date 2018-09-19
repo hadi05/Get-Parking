@@ -21,6 +21,7 @@
 		C5A382C12144276500ABA851 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A382C02144276500ABA851 /* SignUpTableViewController.swift */; };
 		C5A382C321445C3600ABA851 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A382C221445C3600ABA851 /* WelcomeViewController.swift */; };
 		C5CAA4B121456BC0003B629F /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CAA4B021456BC0003B629F /* SignIn.swift */; };
+		C5D016DA2148F2280073DAEA /* carBrands.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D016D92148F2280073DAEA /* carBrands.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		C5A382C02144276500ABA851 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
 		C5A382C221445C3600ABA851 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		C5CAA4B021456BC0003B629F /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		C5D016D92148F2280073DAEA /* carBrands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carBrands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				0FB602F62142B5D600DF590F /* FirebaseReference.swift */,
 				C5A382B821438E7B00ABA851 /* User.swift */,
 				C5A382BA21438EF500ABA851 /* Image.swift */,
+				C5D016D92148F2280073DAEA /* carBrands.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,7 +168,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				TargetAttributes = {
 					0F81FE882141AE910082C53B = {
 						CreatedOnToolsVersion = 9.2;
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D016DA2148F2280073DAEA /* carBrands.swift in Sources */,
 				C5A382B921438E7B00ABA851 /* User.swift in Sources */,
 				C5CAA4B121456BC0003B629F /* SignIn.swift in Sources */,
 				C5A382C321445C3600ABA851 /* WelcomeViewController.swift in Sources */,
@@ -299,6 +303,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -306,6 +311,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -356,6 +362,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -363,6 +370,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -399,7 +407,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RBARW59873;
 				INFOPLIST_FILE = "Get Parking/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sample.Get-Parking";
@@ -417,7 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RBARW59873;
 				INFOPLIST_FILE = "Get Parking/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sample.Get-Parking";

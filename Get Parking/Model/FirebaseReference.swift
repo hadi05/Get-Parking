@@ -8,6 +8,8 @@
 import Foundation
 import Firebase
 
+
+
 enum DbReference {
     
     case root
@@ -66,3 +68,4 @@ enum StoreReference
         }
     }
 }
+
