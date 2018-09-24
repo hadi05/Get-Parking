@@ -43,7 +43,7 @@ class SignUpTableViewController: UITableViewController, UIPickerViewDataSource, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getCarBrandData()
+//        getCarBrandData()
         carModel.delegate = self
         carCompany.delegate = self
         
@@ -60,6 +60,7 @@ class SignUpTableViewController: UITableViewController, UIPickerViewDataSource, 
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if (carCompany.isFirstResponder) {
+            print(carCompany)
 //            if (carBrand.count <= 0) {
 //                return 1
 //            } else {
@@ -95,7 +96,7 @@ class SignUpTableViewController: UITableViewController, UIPickerViewDataSource, 
     func getCarBrandData(){
         SVProgressHUD.show()
         ref.child("cars").observe(.value, with: { snapshot in
-       //     print(snapshot)
+        print(snapshot)
             let values = snapshot.value as! [String : AnyObject]
             self.carBrand = values ["carBrand"] as! NSArray
             SVProgressHUD.dismiss()

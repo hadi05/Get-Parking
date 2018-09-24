@@ -15,6 +15,7 @@
 		0F86F9D32141BAFD00590823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F86F9D22141BAFD00590823 /* Main.storyboard */; };
 		0FB602F72142B5D600DF590F /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB602F62142B5D600DF590F /* FirebaseReference.swift */; };
 		776A575BFFA8559135F36894 /* Pods_Get_Parking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC142B4978B7FC390B448E8 /* Pods_Get_Parking.framework */; };
+		C5921EBD2156417800E91524 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5921EBC2156417800E91524 /* Parking.swift */; };
 		C5A382B921438E7B00ABA851 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A382B821438E7B00ABA851 /* User.swift */; };
 		C5A382BB21438EF500ABA851 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A382BA21438EF500ABA851 /* Image.swift */; };
 		C5A382BD21441AED00ABA851 /* ParkingStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A382BC21441AED00ABA851 /* ParkingStatusViewController.swift */; };
@@ -37,6 +38,7 @@
 		69C93ADB576481F6584B2429 /* Pods-Get Parking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get Parking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Get Parking/Pods-Get Parking.release.xcconfig"; sourceTree = "<group>"; };
 		9DC142B4978B7FC390B448E8 /* Pods_Get_Parking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Get_Parking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52476E6F6748EC65ADC3DEB /* Pods-Get Parking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get Parking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Get Parking/Pods-Get Parking.debug.xcconfig"; sourceTree = "<group>"; };
+		C5921EBC2156417800E91524 /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
 		C5A382B821438E7B00ABA851 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C5A382BA21438EF500ABA851 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		C5A382BC21441AED00ABA851 /* ParkingStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingStatusViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				C5A382B821438E7B00ABA851 /* User.swift */,
 				C5A382BA21438EF500ABA851 /* Image.swift */,
 				C5D016D92148F2280073DAEA /* carBrands.swift */,
+				C5921EBC2156417800E91524 /* Parking.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				0FB602F72142B5D600DF590F /* FirebaseReference.swift in Sources */,
 				C5A382C12144276500ABA851 /* SignUpTableViewController.swift in Sources */,
 				C5A382BB21438EF500ABA851 /* Image.swift in Sources */,
+				C5921EBD2156417800E91524 /* Parking.swift in Sources */,
 				0F81FE8D2141AE910082C53B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
